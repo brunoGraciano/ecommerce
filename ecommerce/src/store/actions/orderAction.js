@@ -65,7 +65,7 @@ export const fetchProductOrder = () => {
         method: "post",
         headers: { "content-type": "application/json" },
         data: products,
-        url: "http://localhost:8086/products/arr"
+        url: "http://localhost:8090/catalog/products/arr"
       }).then(res => {
         let quantityLs = localStorage.getItem("quantity").split(",");
         let productsState = [...res.data];

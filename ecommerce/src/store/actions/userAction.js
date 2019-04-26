@@ -7,7 +7,7 @@ export const addUser = user => {
     method: "post",
     headers: { "content-type": "application/json" },
     data: JSON.stringify(user),
-    url: "http://localhost:8087/users"
+    url: "http://localhost:8090/login/users"
   })
     .then(res => {
       if (res.status === 201) {
@@ -42,7 +42,7 @@ export const updateEnable = (users, index, userId, val) => {
   return dispatch => {
     axios
       .put(
-        `http://localhost:8087/secure/users/${userId}?access_token=${getCookie(
+        `http://localhost:8090/login/secure/users/${userId}?access_token=${getCookie(
           "Session"
         )}`,
         user
@@ -71,7 +71,7 @@ export const updateRole = (role, user, index, userId, users) => {
     user.roles[0].name = r;
     axios
       .put(
-        `http://localhost:8087/secure/users/${userId}?access_token=${getCookie(
+        `http://localhost:8090/login/secure/users/${userId}?access_token=${getCookie(
           "Session"
         )}`,
         user
@@ -91,7 +91,7 @@ export const updateRole = (role, user, index, userId, users) => {
 
 export const fetchUsers = () => {
   return dispatch => {
-    let url = `http://localhost:8087/secure/users?access_token=${getCookie(
+    let url = `http://localhost:8090/login/secure/users?access_token=${getCookie(
       "Session"
     )}`;
     axios
@@ -134,7 +134,7 @@ export const toggleUser = (users, index) => {
 
 export const fetchAuthenticatedUser = () => {
   return dispatch => {
-    let url = `http://localhost:8087/private/users?access_token=${getCookie(
+    let url = `http://localhost:8090/login/private/users?access_token=${getCookie(
       "Session"
     )}`;
     axios
@@ -161,7 +161,7 @@ export const fetchAuthenticatedUserLogin = (username, password) => {
       .request({
         url: `/oauth/token?grant_type=password&username=${username}&password=${password}`,
         method: "post",
-        baseURL: "http://localhost:8087/",
+        baseURL: "http://localhost:8090/login/",
         auth: {
           username: "ecommerce-micros",
           password: "ecommerce"

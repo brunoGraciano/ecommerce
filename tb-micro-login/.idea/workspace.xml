@@ -133,7 +133,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -156,7 +156,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553547213432" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tb-micro-product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -329,7 +329,10 @@
       <workItem from="1555916608711" duration="631000" />
       <workItem from="1555932588150" duration="627000" />
       <workItem from="1556003233955" duration="799000" />
-      <workItem from="1556089613440" duration="1803000" />
+      <workItem from="1556089613440" duration="2405000" />
+      <workItem from="1556262366262" duration="27000" />
+      <workItem from="1556262441734" duration="617000" />
+      <workItem from="1556286653622" duration="601000" />
     </task>
     <servers />
   </component>
@@ -366,7 +369,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381962000" />
+    <option name="totallyTimeSpent" value="383809000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -378,7 +381,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5008104" side_tool="true" weight="0.17910448" />
       <window_info id="Designer" order="1" />
@@ -390,7 +394,7 @@
       <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49918962" weight="0.25273523" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.33260393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.29577464" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.2986871" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39328277" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

@@ -14,7 +14,7 @@ export const addProduct = (
       method: "post",
       headers: { "content-type": "application/json" },
       data: JSON.stringify(product),
-      url: `http://localhost:8086/catalogs/categories/${categoryId}/subcategories/${subcategoryId}/products?session=${getCookie(
+      url: `http://localhost:8090/catalog/catalogs/categories/${categoryId}/subcategories/${subcategoryId}/products?session=${getCookie(
         "Session"
       )}`
     })
@@ -28,7 +28,7 @@ export const addProduct = (
             method: "post",
             headers: { "content-type": "application/json" },
             data: JSON.stringify(attributes),
-            url: `http://localhost:8086/catalogs/categories/${categoryId}/subcategories/${subcategoryId}/products/${productId}/attributes?session=${getCookie(
+            url: `http://localhost:8090/catalog/catalogs/categories/${categoryId}/subcategories/${subcategoryId}/products/${productId}/attributes?session=${getCookie(
               "Session"
             )}`
           })
@@ -42,7 +42,7 @@ export const addProduct = (
               method: "post",
               headers: { "content-type": "application/json" },
               data: JSON.stringify({ url: url }),
-              url: `http://localhost:8086/catalogs/categories/${categoryId}/subcategories/${subcategoryId}/products/${productId}/images?session=${getCookie(
+              url: `http://localhost:8090/catalog/catalogs/categories/${categoryId}/subcategories/${subcategoryId}/products/${productId}/images?session=${getCookie(
                 "Session"
               )}`
             })
@@ -62,7 +62,7 @@ export const addProduct = (
 };
 export const removeProduct = productId => {
   return dispatch => {
-    const urlProduct = `http://localhost:8086/catalogs/categories/audio/subcategories/headphones/products/${productId}?session=${getCookie(
+    const urlProduct = `http://localhost:8090/catalog/catalogs/categories/audio/subcategories/headphones/products/${productId}?session=${getCookie(
       "Session"
     )}`;
 

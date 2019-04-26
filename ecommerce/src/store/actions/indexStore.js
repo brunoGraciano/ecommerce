@@ -27,5 +27,17 @@ export {
   fetchSizes,
   fetchWeights,
   fetchBrands,
-  fetchColors
+  fetchColors,
+  createBrand,
+  removeBrand,
+  editBrand,
+  createWeight,
+  removeWeight,
+  editWeight,
+  createSize,
+  removeSize,
+  editSize,
+  createColor,
+  removeColor,
+  editColor
 } from "./catalogAction";

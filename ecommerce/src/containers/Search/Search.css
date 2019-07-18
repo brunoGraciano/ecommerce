@@ -1,0 +1,29 @@
+.Search {
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #b8b8b8;
+  display: flex;
+}
+.Search .search-icon {
+  align-self: center;
+}
+.Search input {
+  padding: 20px 10px;
+  width: 100%;
+  font: inherit;
+  color: #b8b8b8;
+  background-color: none;
+  border: none;
+}
+.Search input::placeholder {
+  color: #b8b8b8;
+  font-weight: 500;
+  font-size: 15px;
+}
+.Search textarea:focus,
+.Search input:focus {
+  outline: none;
+}
+.Search input:focus {
+  outline: none;
+}

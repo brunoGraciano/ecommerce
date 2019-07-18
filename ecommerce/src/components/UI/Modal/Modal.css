@@ -1,0 +1,58 @@
+.Modal {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 360px;
+  background-color: #fff;
+  z-index: 5;
+  padding: 10px 20px;
+}
+.Modal h2 {
+  font-weight: 600;
+  font-size: 1.25em;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #b8b8b8;
+}
+.Modal input {
+  border: none;
+  border-bottom: 1px solid #b8b8b8;
+  padding: 8px 10px;
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  outline: none;
+}
+.Modal .buttons-wrapper {
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 8px 1fr;
+}
+.Modal #update,
+.Modal #cancel {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+.Modal #update:hover,
+.Modal #cancel:hover {
+  cursor: pointer;
+}
+.Modal #update {
+  grid-column: 1 / span 1;
+  background-color: #f6a61f;
+  border: 1px solid #f6a61f;
+  color: #fff;
+}
+.Modal #cancel {
+  grid-column: 3 / span 1;
+  text-decoration: none;
+  background: none;
+  border: 1px solid #b8b8b8;
+  color: #b8b8b8;
+}
+.Modal input:focus {
+  border-bottom: 1px solid #f6a61f;
+  outline: none;
+}

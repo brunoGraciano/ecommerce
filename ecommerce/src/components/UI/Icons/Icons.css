@@ -1,0 +1,28 @@
+.icon {
+  margin: 0 15px;
+  fill: #b8b8b8;
+}
+.icon:hover {
+  fill: #111;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.icon-logged {
+  fill: #fff;
+  width: 27px;
+}
+.icon-logged::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #cacaca;
+  margin-top: -30px;
+  margin-left: -1px;
+}
+.icon-logged:hover {
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}

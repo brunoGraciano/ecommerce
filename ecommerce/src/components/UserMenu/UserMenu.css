@@ -1,0 +1,61 @@
+.UserMenu {
+  position: absolute;
+  right: 10px;
+  top: 49px;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #b8b8b8;
+  z-index: 5;
+}
+.UserMenu:after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  width: 2px;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #fff;
+}
+.UserMenu:before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: -12px;
+  width: 2px;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #b8b8b8;
+}
+.UserMenu a {
+  text-decoration: none;
+  border-bottom: 1px solid #b8b8b8;
+  display: flex;
+}
+.UserMenu .logout,
+.UserMenu a,
+.UserMenu .greeting {
+  cursor: pointer;
+  text-indent: 15px;
+  padding: 5px 0;
+}
+.UserMenu .logout,
+.UserMenu a {
+  color: #b8b8b8;
+}
+.UserMenu .logout:hover,
+.UserMenu a:hover {
+  color: #111;
+}
+@media only screen and (max-width: 600px) {
+  .UserMenu {
+    right: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .UserMenu {
+    right: 50px;
+  }
+}

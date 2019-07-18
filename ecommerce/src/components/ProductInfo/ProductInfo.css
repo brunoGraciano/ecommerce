@@ -1,0 +1,151 @@
+.ProductInfo .brand {
+  color: #f6a61f;
+  font-size: 18px;
+  margin: 0;
+}
+.ProductInfo .model {
+  font-size: 25px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.ProductInfo section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+}
+.ProductInfo section h4,
+.ProductInfo section h3 {
+  font-size: 16px;
+  align-self: center;
+}
+.ProductInfo section h4 {
+  font-weight: 700;
+}
+.ProductInfo section h3 {
+  color: #b8b8b8;
+  font-weight: 600;
+}
+.ProductInfo .color {
+  border-top: 1px solid #b8b8b8;
+}
+.ProductInfo .color div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  border: 1px solid #b8b8b8;
+}
+.ProductInfo .size {
+  border-top: 1px solid #b8b8b8;
+  border-left: 1px solid #b8b8b8;
+}
+.ProductInfo .color h3,
+.ProductInfo .size h3 {
+  margin-bottom: 4px;
+}
+.ProductInfo .size h3,
+.ProductInfo .size select {
+  margin-left: 10px;
+}
+.ProductInfo .size select {
+  width: calc(100% - 10px);
+  font-size: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+  border: 0px;
+}
+.ProductInfo .size select:focus {
+  outline: none;
+}
+.ProductInfo section .quantity {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+  border-top: 1px solid #b8b8b8;
+}
+.ProductInfo section .price {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 2;
+  border-top: 1px solid #b8b8b8;
+}
+.ProductInfo section .quantity,
+.ProductInfo section .price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.ProductInfo section .quantity h4,
+.ProductInfo section .price h4 {
+  justify-self: end;
+}
+.ProductInfo #description {
+  display: none;
+}
+.ProductInfo section .description {
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 2;
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-bottom: 15px;
+}
+.ProductInfo section .description .btn-plus {
+  cursor: pointer;
+  color: #b8b8b8;
+  justify-self: end;
+  align-self: center;
+  transition: 0.2s ease;
+}
+.ProductInfo section .description .btn-plus:hover {
+  color: #333;
+  transition: 0.2s ease;
+}
+.ProductInfo section .description p {
+  grid-column: 1 / span 2;
+}
+.ProductInfo section .btn-basket,
+.ProductInfo section .btn-edit {
+  grid-row: 5 / span 1;
+  padding: 8px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  text-align: center;
+  font: inherit;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-decoration: none;
+}
+.ProductInfo .btn-edit {
+  grid-column: 1 / span 1;
+  border: 1px solid #b8b8b8;
+  background-color: #fff;
+  color: #b8b8b8;
+  margin-right: 5px;
+}
+.ProductInfo .btn-basket {
+  grid-column: 1 / span 2;
+  border: 1px solid #f6a61f;
+  background-color: #f6a61f;
+  color: #fff;
+}
+.ProductInfo .btn-edit:hover {
+  background-color: #b8b8b8;
+  color: #fff;
+}
+.ProductInfo .btn-basket:hover {
+  background-color: #fff;
+  color: #f6a61f;
+}
+.ProductInfo .line {
+  widows: 100%;
+  height: 100%;
+  background-color: #b8b8b8;
+}
+.ProductInfo .size-text {
+  text-align: right;
+  text-transform: capitalize;
+  margin: 10px 0;
+}

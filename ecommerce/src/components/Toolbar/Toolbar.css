@@ -1,0 +1,20 @@
+.Toolbar-main {
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .Toolbar-main {
+    grid-template-columns: 10px 65px auto 105px 10px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .Toolbar-main {
+    grid-template-columns: 10px 4fr 12fr 4fr 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Toolbar-main {
+    grid-template-columns: 50px 4fr 12fr 4fr 50px;
+  }
+}

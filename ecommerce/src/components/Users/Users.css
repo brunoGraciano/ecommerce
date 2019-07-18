@@ -1,0 +1,95 @@
+.User-Height {
+  min-height: calc(100vh - 163px);
+}
+.Users {
+  max-width: 1100px;
+  margin: auto;
+  margin: 30px 0;
+  background-color: #fff;
+  overflow-x: auto;
+}
+.Users table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.Users td {
+  padding: 10px;
+  text-align: center;
+}
+.Users thead tr {
+  height: 50px;
+}
+.Users tbody td {
+  font-size: 0.9em;
+  color: #b8b8b8;
+}
+.Users .dropdown-btn-wrapper:hover {
+  cursor: pointer;
+}
+.Users .dropdown-btn-wrapper:hover .dropdown-btn {
+  transition: all 0.2s ease-in-out;
+  color: #111;
+}
+.Users tbody .hover-row:hover {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.08);
+}
+.Users .more-info {
+  padding: 10px 0 20px 0;
+  max-width: 450px;
+  margin: auto;
+  text-align: left;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 100px 30px auto;
+}
+.Users .profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.Users .info {
+  height: 100px;
+  display: grid;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+.Users .info .bold {
+  color: #b8b8b8;
+  font-weight: 700;
+}
+.Users .green,
+.Users .red {
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.Users .green {
+  cursor: pointer;
+  background-color: rgb(33, 216, 33);
+}
+.Users .red {
+  cursor: pointer;
+  background-color: rgb(216, 33, 33);
+}
+@media only screen and (max-width: 600px) {
+  .Users {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .Users {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .Users {
+    margin: auto;
+    margin-top: 30px;
+  }
+}

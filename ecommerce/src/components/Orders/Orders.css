@@ -1,0 +1,137 @@
+.Orders-Height {
+  min-height: calc(100vh - 163px);
+}
+.Orders {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 5fr 20px 2fr;
+}
+.Orders table {
+  text-align: left;
+  width: calc(100% - 60px);
+  margin: 0 30px;
+  border-collapse: collapse;
+}
+.Orders thead th {
+  color: #b8b8b8;
+  padding: 30px 5px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.Orders thead tr {
+  border-bottom: 1px solid #b8b8b8;
+}
+.Orders tbody td {
+  padding: 15px 5px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.Orders .cart-products {
+  grid-column: 1 / span 1;
+}
+.Orders .frame-img {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.Orders .frame-img img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.Orders .details {
+  cursor: pointer;
+}
+.Orders .cart-products-wrapper {
+  background-color: #fff;
+}
+.Orders .price {
+  grid-column: 3 / span 1;
+}
+.price-wrapper {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: auto 20px auto 20px;
+}
+.Orders .total-price {
+  grid-column: 2 / span 1;
+  color: #b8b8b8;
+  font-size: 0.9em;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+.Orders .price-number {
+  font-weight: 600;
+  color: #111;
+}
+.Orders .checkout-btn {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  padding: 8px 5px;
+  border: 1px solid #f6a61f;
+  background-color: #f6a61f;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Orders .checkout-btn:hover {
+  background-color: #fff;
+  color: #f6a61f;
+  transition: 0.2s ease;
+}
+.Orders .no-products {
+  text-align: center;
+  font-weight: 600;
+  color: #b8b8b8;
+  font-size: 1.1em;
+  height: 50px;
+}
+.Orders .product-brand {
+  font-size: 0.8em;
+  color: #f6a61f;
+}
+.Orders .quantity-input {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .Orders {
+    max-width: 380px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 20px auto;
+  }
+  .Orders .price {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .Orders table {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+  .Orders th:last-child {
+    display: none;
+  }
+  .Orders td:last-child:not(.no-products) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .Orders {
+    max-width: 700px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .Orders {
+    max-width: 1100px;
+  }
+}
